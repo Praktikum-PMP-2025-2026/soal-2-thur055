@@ -22,7 +22,7 @@ int main (){
     }
     scanf("%d", &jadwal[N-1]);
     int temp;
-    int j = 0;
+    int j = 1;
     while (N - pow (2, j) > 0){
         j++;
     }
