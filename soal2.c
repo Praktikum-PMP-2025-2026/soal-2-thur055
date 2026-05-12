@@ -73,7 +73,7 @@ int main (){
         }
         else{
             if (i == 0){
-                printf("%d\n", jadwal[i]);
+                printf("%d", jadwal[i]);
             }
             else if (i == 1){
                 printf("%d ", jadwal[i+1]);
