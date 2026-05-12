@@ -61,12 +61,12 @@ int main (){
                     printf("%d", jadwal[N-1]);
                 }
                 else{
-                    for (int k = N-1; k >= i + pow(2, i-2) - 1; k--){
+                    for (int k = N-1; k >= N + pow(2, i-2) - i; k--){
                     
                         printf("%d ", jadwal[k]);
                     
                     }
-                    int b = i + pow(2, i-2);
+                    int b = N + pow(2, i-2) - i - 1;
                     printf("%d", jadwal[b]);
                 }
             }
