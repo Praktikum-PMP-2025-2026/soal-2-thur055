@@ -28,7 +28,7 @@ int main (){
     }
     // printf("j: %d\n", j);
     int a = 0;
-    for (int i = 0; i < j; i++){
+    for (int i = 0; i <= j; i++){
         printf("LEVEL %d: ", i);
         a = a + pow(2, i);
         if (i > 1){
