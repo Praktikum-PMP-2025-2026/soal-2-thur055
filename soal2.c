@@ -29,7 +29,7 @@ int main (){
     // printf("j: %d\n", j);
     int a = 0;
     for (int i = 0; i < j; i++){
-        printf("Level %d: ", i);
+        printf("LEVEL %d: ", i);
         a = a + pow(2, i);
         if (i > 1){
             if (a < N){
@@ -39,7 +39,7 @@ int main (){
                         printf("%d ", jadwal[k]);
                     
                     }
-                    printf("%d\n", jadwal[a-1]);
+                    printf("%d", jadwal[a-1]);
                 }
                 else{
                     for (int k = a-1; k >= i + pow(2, i-2); k--){
@@ -48,7 +48,7 @@ int main (){
                     
                     }
                     int b = i + pow(2, i-2);
-                    printf("%d\n", jadwal[b]);
+                    printf("%d", jadwal[b]);
                 }
             }
             else{
@@ -59,7 +59,6 @@ int main (){
                     
                     }
                     printf("%d", jadwal[N-1]);
-                    printf("\n");
                 }
                 else{
                     for (int k = N-1; k >= i + pow(2, i-2) - 1; k--){
@@ -68,7 +67,7 @@ int main (){
                     
                     }
                     int b = i + pow(2, i-2);
-                    printf("%d\n", jadwal[b]);
+                    printf("%d", jadwal[b]);
                 }
             }
         }
@@ -78,8 +77,9 @@ int main (){
             }
             else if (i == 1){
                 printf("%d ", jadwal[i+1]);
-                printf("%d\n", jadwal[i]);
+                printf("%d", jadwal[i]);
             }
         }
+        printf("\n")
     }
 }
