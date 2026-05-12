@@ -80,6 +80,6 @@ int main (){
                 printf("%d", jadwal[i]);
             }
         }
-        printf("\n")
+        printf("\n");
     }
 }
