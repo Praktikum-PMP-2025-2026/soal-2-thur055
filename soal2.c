@@ -61,7 +61,7 @@ int main (){
                     printf("%d\n", jadwal[N-1]);
                 }
                 else{
-                    for (int k = N-1; k > i + pow(2, i-2); k--){
+                    for (int k = N-1; k >= i + pow(2, i-2) - 1; k--){
                     
                         printf("%d ", jadwal[k]);
                     
