@@ -1,6 +1,13 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+int pow (double a, double b){
+    int temp = a;
+    for (int i = 0; i<b;i++){
+        a = a*temp;
+    }
+    return a;
+}
 
 int main (){
     int N;
